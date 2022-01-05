@@ -5,14 +5,18 @@ import axios from 'axios'
 
 export default function Dictionary() {
 let [keyword, setKeyword] = useState ("");
+let [definition, setDefinition] = useState (null); 
+
 
 function handleResponse(response) {
     console.log(response.data[0]);
+    setDefinition(response.data[0].meanings[0].definitions[0].definition);
+
   }
 
     function searching (event) {
         event.preventDefault();
-        alert(`Searching for ${keyword} definition...`);
+        alert(`Searching for ${keyword} definition...${definition}`);
     
         //documentation: https://dictionaryapi.dev/
 
@@ -31,7 +35,7 @@ setKeyword(event.target.value);
     <form onSubmit={searching}>
       <input type="search" onChange={handleTyping} ></input>
     </form>
-    <Results />
+    <Results result={definition}/>
   </div>
   )
 }
