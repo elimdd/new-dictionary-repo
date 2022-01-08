@@ -11,9 +11,9 @@ function App() {
         <img src={logo}
         className="App-logo" alt="logo" />
     <div className="App">
-      <h1>DICTiONARY</h1>
+      <h1>DICTiONARY !!</h1>
       <Dictionary />
-      <div>
+      <div className="app-footer">
         <a href="/">Open-source</a> code by <a href="/">Eliana Marques</a> and
         hosted on <a href="/">Netlify</a>
       </div>
