@@ -13,6 +13,7 @@ function App() {
     <div className="App">
       <h1>DICTiONARY</h1>
       <Dictionary />
+      <br />
       <div>
         <a href="/">Open-source</a> code by <a href="/">Eliana Marques</a> and
         hosted on <a href="/">Netlify</a>
