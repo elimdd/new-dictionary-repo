@@ -11,13 +11,13 @@ function App() {
         <img src={logo}
         className="App-logo" alt="logo" />
     <div className="App">
-      <h1>DICTiONARY</h1>
+      <h1>DiCTiONARY</h1>
       <Dictionary />
       <br />
-      <div>
+      <section>
         <a href="/">Open-source</a> code by <a href="/">Eliana Marques</a> and
         hosted on <a href="/">Netlify</a>
-      </div>
+      </section>
     </div>
       </header>
     </div>

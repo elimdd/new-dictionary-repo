@@ -1,3 +1,24 @@
+h3 {
+    color: whitesmoke;
+    padding:0;
+    margin: 0;
+}
+section {
+    background-color: lightblue;
+    padding:30px;
+    border: 4px solid darkblue;
+    border-radius: 8px;
+    margin:20px
+}
 .dictionary {
-    background-color: brown;
+    background-color: blue;
+    padding: 50px;
+    border-radius: 8px;
+
+}
+.input {
+    background-color: whitesmoke;
+    border-radius: 8px;
+    font-size: 40px;
+    border: 4px solid darkblue;
 }

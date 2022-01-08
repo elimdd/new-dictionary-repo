@@ -31,12 +31,11 @@ setKeyword(event.target.value);
 
   return (
     <div className="dictionary">
+        <h3> What word are you looking for?</h3>
     <form onSubmit={searching}>
-      <input type="search" onChange={handleTyping} ></input>
+      <input className="input" placeholder="Type here..." type="search" onChange={handleTyping} ></input>
     </form>
-    <div>
     <Results result={definition}/>
-    </div>
   </div>
   )
 }
